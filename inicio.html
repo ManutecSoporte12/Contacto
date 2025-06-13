@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto con texto a la izquierda</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .texto-izquierda {
+      font-size: 100px;
+      line-height: 1.2;
+      white-space: nowrap;
+      user-select: none;
+    }
+    .linea-vertical {
+      width: 3px;
+      height: 80vh;
+      background-color: white;
+    }
+    .texto-derecha {
+      font-size: 100px;
+      line-height: 1.2;
+      max-width: 90vw;
+      white-space: pre-line;
+      word-break: break-word;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="texto-izquierda">Contactos</div>
+    <div class="linea-vertical"></div>
+    <div class="texto-derecha">
+manutec.mx@gmail.com
+manutecsoprt@gmail.com<br>
+Tel. 663-445-67-14
+    </div>
+  </div>
+
+</body>
+</html>
